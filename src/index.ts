@@ -79,7 +79,7 @@ app.post('/webhook', async (c) => {
     if (await verifyHMAC(c.env.WEBHOOK_SECRET, body, signature)) {
         const message = 'Webhook signature is valid. Processing the request...'
         console.log(message);
-        const username = JSON.parse(body)['username'];
+        const username = JSON.parse(body)['object']['username'];
         await createStatus(c.env.ACCESS_TOKEN, username);
         return c.text(message);
     } else {
