@@ -1,12 +1,12 @@
+Uses [Wrangler](https://developers.cloudflare.com/workers/wrangler/) to deploy to CloudFlare Workers.
+
+### Local Development
 ```
 npm install
 npm run dev
 ```
 
-```
-open http://localhost:8788
-```
-
+### Deploying
 ```
 npm run deploy
 ```
