@@ -32,7 +32,7 @@ async function verifyHMAC(key: string, body: string, receivedHmac: string): Prom
 async function createStatus(accessToken: string, username: string): Promise<void> {
     const url = 'https://shakedown.social/api/v1/statuses';
     var status = `Hey @${username} - welcome to Shakedown! Here are some tips:\n\n`;
-    status += `- Use the local timeline to find initial people to follow. Once you are following 30+ people, use this tool to find accounts you’ll enjoy https://followgraph.vercel.app/\n\n`;
+    status += `- Use the local timeline to find initial people to follow. Once you are following 10+ people, use this tool to find more accounts you’ll enjoy https://followgraph.vercel.app/\n\n`;
     status += `- The official Mastodon phone apps aren't great - try Mammoth for iOS and Tusky for Android\n\n`;
     status += `- Following more people makes Mastodon more fun. It keeps your Home feed active. So follow away! You can always unfollow later.\n\n`;
     status += `If you have any questions, let me know!`;
